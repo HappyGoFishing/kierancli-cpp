@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\kiera\source\repos\kierancli++\main.cpp(16): warning C4715: 'kierancrossland::is_directory_empty': not all control paths return a value
+  kierancli++.vcxproj -> C:\Users\kiera\source\repos\kierancli++\x64\Debug\kierancli++.exe
