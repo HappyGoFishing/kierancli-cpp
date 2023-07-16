@@ -128,10 +128,9 @@ void login_menu(User user, std::string USER_DIR) {
 		std::string typed_password; //typed_password is a temp password that is checked against the actual password read into user.password.
 		std::cin >> typed_password;
 
-		user.password = read_from_text_file(password_file); //plain text authentication backend.
+		user.password = read_from_text_file(password_file);
 		/*The authentication system is written so that user.password need only exist as a string.
-		It isn't concerned with HOW user.password is read into the program,
-		making it easy to add alternate authentication backends.
+		It isn't concerned with HOW user.password is read into the program.
 		*/
 		if (user.password != typed_password) std::cout << "Incorrect username or password\n";
 
@@ -141,7 +140,6 @@ void login_menu(User user, std::string USER_DIR) {
 		}
 	}
 }
-
 
 
 int main() {
